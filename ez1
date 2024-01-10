@@ -1,0 +1,11 @@
+create database studentdb;
+CREATE TABLE tblstudent (
+    studentId INT AUTO_INCREMENT PRIMARY KEY,
+    studentName VARCHAR(64),
+    dob VARCHAR(64)
+);
+insert into tblstudent (studentName, dob) values ('Bob Smith', '13/02.1995'), ('Susan Bones', '25/07/1997'), ('Padma Patil', '22/12/1999');
+SELECT 
+    *
+FROM
+    tblstudent;
